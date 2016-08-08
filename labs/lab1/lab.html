@@ -426,12 +426,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Set the API target for the CLI: (set appropriate end point for your environment)</p>
 <div class="listingblock">
 <div class="content">
-<pre>$ cf api https://api.devcloudwest.inbcu.com --skip-ssl-validation</pre>
+<pre>$ cf api https://api.run.pivotal.io</pre>
 </div>
 </div>
 </li>
 <li>
-<p>Login to Pivotal Cloudfoundry:</p>
+<p>Login to Pivotal Cloud Foundry:</p>
 <div class="listingblock">
 <div class="content">
 <pre>$ cf login</pre>
@@ -544,7 +544,7 @@ Here the CLI is creating a route with random word tokens inserted (again, see <c
 Routes can actually be bound to multiple applications to support techniques such as <a href="http://www.mattstine.com/2013/07/10/blue-green-deployments-on-cloudfoundry">blue-green deployments</a>.</p>
 </li>
 <li>
-<p>The CLI finally uploads the application bits to Pivotal Cloudfoundry. Notice that it&#8217;s uploading <em>75 files</em>! This is because Cloud Foundry actually explodes a ZIP artifact before uploading it for caching purposes.</p>
+<p>The CLI finally uploads the application bits to Pivotal Cloud Foundry. Notice that it&#8217;s uploading <em>75 files</em>! This is because Cloud Foundry actually explodes a ZIP artifact before uploading it for caching purposes.</p>
 </li>
 <li>
 <p>Now we begin the staging process. The <a href="https://github.com/cloudfoundry/java-buildpack">Java Buildpack</a> is responsible for assembling the runtime components necessary to run the application.</p>
@@ -554,7 +554,7 @@ Routes can actually be bound to multiple applications to support techniques such
 </li>
 <li>
 <p>The complete package of your application and all of its necessary runtime components is called a <em>droplet</em>.
-Here the droplet is being uploaded to Pivotal Cloudfoundry&#8217;s internal blobstore so that it can be easily copied to one or more <em><a href="http://docs.cloudfoundry.org/concepts/architecture/execution-agent.html">Droplet Execution Agents (DEA&#8217;s)</a></em> for execution.</p>
+Here the droplet is being uploaded to Pivotal Cloud Foundry&#8217;s internal blobstore so that it can be easily copied to one or more <em><a href="http://docs.cloudfoundry.org/concepts/architecture/execution-agent.html">Droplet Execution Agents (DEA&#8217;s)</a></em> for execution.</p>
 </li>
 <li>
 <p>The CLI tells you exactly what command and argument set was used to start your application.</p>

@@ -1,4 +1,4 @@
-= Lab 2 - Binding to Cloudfoundry Services
+= Lab 2 - Binding to Cloud Foundry Services
 
 [abstract]
 --
@@ -26,16 +26,16 @@ image::lab.png[]
 
 == The Services Marketplace
 
-There are two ways to discover what services are available on Pivotal Cloudfoundry.
+There are two ways to discover what services are available on Pivotal Cloud Foundry.
 The first is available on any instance of Cloud Foundry: the CLI. Just type:
 
 ----
 $ cf marketplace
 ----
 
-and you'll get a list of services, their available plans, and descriptions. On Pivotal Cloudfoundry, the ``free'' tier of plans is normally the first one listed.
+and you'll get a list of services, their available plans, and descriptions. On Pivotal Cloud Foundry, the ``free'' tier of plans is normally the first one listed.
 
-The second way is specific to Pivotal Cloudfoundry's Apps Manager UI.
+The second way is specific to Pivotal Cloud Foundry's Apps Manager UI.
 If you haven't already, login to it by visiting http://console.devcloudwest.inbcu.com
 
 Click on the ''Marketplace'' link:
@@ -49,7 +49,7 @@ image::lab2.png[]
 == Creating and Binding to a Service Instance
 
 . Let's begin by creating a MySQL service instance.
-From the Apps Manager UI service marketplace, select _MySQL for Pivotal Cloudfoundry_, select the free plan, and provide an instance name.
+From the Apps Manager UI service marketplace, select _MySQL for Pivotal Cloud Foundry_, select the free plan, and provide an instance name.
 In the drop-down list next to _Bind to App_ select your workshop application.
 +
 image::lab3.png[]

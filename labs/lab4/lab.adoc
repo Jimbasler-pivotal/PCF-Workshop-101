@@ -2,8 +2,8 @@
 
 [abstract]
 --
-Pivotal Cloudfoundry makes the work of performing operations actions, such as scaling, doing a zero-downtime deploy, and managing application health very easy.
-In the this labs we'll continue to explore Pivotal Cloudfoundry application operations.
+Pivotal Cloud Foundry makes the work of performing operations actions, such as scaling, doing a zero-downtime deploy, and managing application health very easy.
+In the this labs we'll continue to explore Pivotal Cloud Foundry application operations.
 --
 
 == Tailing Application Logs

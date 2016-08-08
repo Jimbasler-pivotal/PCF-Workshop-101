@@ -7,10 +7,10 @@
 . Set the API target for the CLI: (set appropriate end point for your environment)
 +
 ----
-$ cf api https://api.devcloudwest.inbcu.com --skip-ssl-validation
+$ cf api https://api.run.pivotal.io
 ----
 
-. Login to Pivotal Cloudfoundry:
+. Login to Pivotal Cloud Foundry:
 +
 ----
 $ cf login
@@ -50,7 +50,7 @@ OK <4>
 Uploading nodejs... <5>
 Uploading app files from: /Users/phopper/workspace/NBCU-PCF-Workshop-101/nodejs-cf-sample-app
 Uploading 259K, 39 files
-Done uploading               
+Done uploading
 OK
 
 Starting app nodejs in org TELCO / space hopper as phopper@pivotal.io... <6>
@@ -188,8 +188,8 @@ last uploaded: Thu Sep 24 18:59:26 UTC 2015
 stack: cflinuxfs2
 buildpack: Node.js
 
-     state     since                    cpu    memory          disk          details   
-#0   running   2015-09-24 01:00:18 PM   0.0%   73.9M of 128M   91.2M of 1G      
+     state     since                    cpu    memory          disk          details
+#0   running   2015-09-24 01:00:18 PM   0.0%   73.9M of 128M   91.2M of 1G
 ----
 <1> The CLI is using a manifest to provide necessary configuration details such as application name, memory to be allocated, and path to the application artifact.
 Take a look at `manifest.yml` to see how.
@@ -200,13 +200,13 @@ Here the CLI is creating a route with random word tokens inserted (again, see `m
 <4> Now the CLI is _binding_ the created route to the application.
 Routes can actually be bound to multiple applications to support techniques such as http://www.mattstine.com/2013/07/10/blue-green-deployments-on-cloudfoundry[blue-green deployments].
 <5> The CLI finally uploads the application bits to Pivotal Cloud Foundry. Notice that it's uploading _39 files_! This is because Cloud Foundry actually explodes a ZIP artifact before uploading it for caching purposes.
-<6> Now we begin the staging process. 
+<6> Now we begin the staging process.
 <7> Node and NPM dependenices are pulled from git hub, normally they would be pulled from Cloud Foundry, this is specific to Node.
 <8> Here we see the version of the 'express@4.12.4 node_modules/express' that has been chosen and installed.
 <9> Here we see the version of the 'njade@1.11.0 node_modules/jade' that has been chosen and installed.
 <10> Here we see the version of the 'bower@1.5.3 node_modules/bower' that has been chosen and installed.
 <11> The complete package of your application and all of its necessary runtime components is called a _droplet_.
-Here the droplet is being uploaded to Pivotal Cloudfoundry's internal blobstore so that it can be easily copied to one or more _http://docs.cloudfoundry.org/concepts/architecture/execution-agent.html[Droplet Execution Agents (DEA's)]_ for execution.
+Here the droplet is being uploaded to Pivotal Cloud Foundry's internal blobstore so that it can be easily copied to one or more _http://docs.cloudfoundry.org/concepts/architecture/execution-agent.html[Droplet Execution Agents (DEA's)]_ for execution.
 <12> The CLI tells you exactly what command and argument set was used to start your application.
 <13> Finally the CLI reports the current status of your application's health.
 ====
