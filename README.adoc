@@ -7,7 +7,7 @@ This one day hands-on classroom style session will provide developers (and opera
 10:00 AM - 10:30 AM::
  * Session 1: _Welcome to the Cloud Native Enterprise_ 
 10:30 AM - 11:00 AM::
- * Demo: Pushing your first app, Apps Manager, Ops Manager_
+ * Demo: _Pushing Your First App, Apps Manager, Ops Manager_
 11:00 AM - 11:15 AM:: Break
 11:45 AM - 1:00 PM:: 
 * Session 2: _Pivotal Cloud Foundry Architecture and Containers_
@@ -16,7 +16,7 @@ This one day hands-on classroom style session will provide developers (and opera
 1:15 PM - 1:30 PM:: 
 * Session 3: _Pivotal Cloud Foundry Services_
 1:30 PM - 4:30 PM:: 
-* Labs - Push, Scale, Bind, Monitor and Integrate your app
+* Labs - _Push, Scale, Bind, Monitor and Integrate Your App_
 
 == Course Materials
 
@@ -28,7 +28,6 @@ This one day hands-on classroom style session will provide developers (and opera
 * Developer Workshop
 ** Lab 1 - From Zero to Pushing Your First Application
 *** link:labs/lab1/lab.adoc[**Java** Application]
-*** link:labs/lab1/lab-ruby.adoc[**Ruby** Application]
 *** link:labs/lab1/lab-node.adoc[**NodeJS** Application]
 ** link:labs/lab2/lab.adoc[Lab 2 - Binding to Cloud Foundry Services]
 ** link:labs/lab3/lab.adoc[Lab 3 - Operating Your Application]
