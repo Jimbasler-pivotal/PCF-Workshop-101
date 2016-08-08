@@ -1,4 +1,4 @@
-= Lab 6 - Pushing .NET Core Apps to Pivotal Cloud Foundry
+= Lab 7 - Pushing .NET Core Apps to Pivotal Cloud Foundry
 
 == Target
 
@@ -22,7 +22,7 @@ Follow the prompts
 
 The tutorial application has been built for you and is ready to deploy.
 
-. Change to the _lab7_ directory and unzip the _simple-todos_ archive:
+. Change to the _lab7_ directory and unzip the _aspnet-core-helloworld-master_ archive:
 +
 ----
 $ cd $BOOTCAMP_HOME/labs/lab7
