@@ -1,0 +1,83 @@
+= Lab 6 - Pushing Meteor Apps to Pivotal Cloud Foundry
+
+== Target
+
+. If you haven't already, download the latest release of the Cloud Foundry CLI from https://github.com/cloudfoundry/cli/releases for your operating system and install it.
+
+. Set the API target for the CLI: (set appropriate end point for your environment)
++
+----
+$ cf api https://api.run.pivotal.io
+----
+
+. Login to Pivotal Cloud Foundry:
++
+----
+$ cf login
+----
++
+Follow the prompts
+
+== Setup a MongoDB Service
+
+Find the MongoDB service and provision an instance to your space. When you bind your application the connection information will be made available to your application using the VCAP_SERVICES environment variable. The Meteor buildpack will automatically configure your connection for you. You will be using a free plan provided by MLabs.
+
+. View the marketplace through the CLI.
++
+----
+$ cf marketplace
+----
+The output shows a listing of all available services, plans, and a description of each.
+
+. Create the service instance.
++
+----
+cf create-service mlab sandbox todos-mongo
+----
+
+== Push It!
+
+The tutorial application from http://www.meteor.com has been built for you and is ready to deploy.
+
+. Change to the _lab6_ directory and unzip the _simple-todos_ archive:
++
+----
+$ cd $BOOTCAMP_HOME/labs/lab6
+$ unzip simple-todos.zip
+----
+
+. View the application manifest, then push the app.
++
+----
+$ cd simple-todos
+$ cat manifest.yml
+$ cf push
+----
+
+== Interact with App from CF CLI
+
+. Get information about the currently deployed application using CLI apps command:
++
+----
+$ cf apps
+----
++
+Note the application name for next steps
+
+. Get information about running instances, memory, CPU, and other statistics using CLI instances command
++
+----
+$ cf app <<app_name>>
+----
+
+. Stop the deployed application using the CLI
++
+----
+$ cf stop <<app_name>>
+----
+
+. Delete the deployed application using the CLI
++
+----
+$ cf delete <<app_name>>
+----

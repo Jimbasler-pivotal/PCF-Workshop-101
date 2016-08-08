@@ -5,17 +5,17 @@
 This one day hands-on classroom style session will provide developers (and operators) with hands on experience with Pivotal Cloud Foundry concepts, architecture and fundamentals of pushing code and building applications. The session includes presentations, demos and hands on labs.
 
 10:00 AM - 10:30 AM::
- * Session 1: _Welcome to the Cloud Native Enterprise_ 
+ * Session 1: _Welcome to the Cloud Native Enterprise_
 10:30 AM - 11:00 AM::
  * Demo: _Pushing Your First App, Apps Manager, Ops Manager_
 11:00 AM - 11:15 AM:: Break
-11:45 AM - 1:00 PM:: 
+11:45 AM - 1:00 PM::
 * Session 2: _Pivotal Cloud Foundry Architecture and Containers_
 * Session 2: _Pivotal Cloud Foundry for Operators_
 1:00 PM - 1:15 PM:: Break
-1:15 PM - 1:30 PM:: 
+1:15 PM - 1:30 PM::
 * Session 3: _Pivotal Cloud Foundry Services_
-1:30 PM - 4:30 PM:: 
+1:30 PM - 4:30 PM::
 * Labs - _Push, Scale, Bind, Monitor and Integrate Your App_
 
 == Course Materials
@@ -33,5 +33,7 @@ This one day hands-on classroom style session will provide developers (and opera
 ** link:labs/lab3/lab.adoc[Lab 3 - Operating Your Application]
 ** link:labs/lab4/lab.adoc[Lab 4 - Monitoring Your Application]
 ** link:labs/lab5/lab.adoc[Advanced Lab - Deploying a .NET Application]
-** link:cf-spring-trader/README.md[Advanced Lab - Spring Cloud Services, _**Java** Only_]
+** link:cf-spring-trader/README.md[Advanced Lab - Spring Cloud Services]
 ** link:labs/lab5/continuous-delivery-lab.adoc[Advanced Lab - Jenkins Integration]
+** link:labs/lab6/lab-meteor.adoc[Advanced Lab - Push a Meteor App]
+** link:labs/lab7/lab-netcore.adoc[Advanced Lab - Push a .NET Core App]
