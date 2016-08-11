@@ -7,7 +7,7 @@ This one day hands-on classroom style session will provide developers (and opera
 10:00 AM - 10:30 AM::
  * Session 1: _Welcome to the Cloud Native Enterprise_
 10:30 AM - 11:00 AM::
- * Demo: _Pushing Your First App, Apps Manager, Ops Manager_
+ * Demo: _Pushing Your First App, Apps Manager_
 11:00 AM - 11:15 AM:: Break
 11:45 AM - 1:00 PM::
 * Session 2: _Pivotal Cloud Foundry Architecture and Containers_
